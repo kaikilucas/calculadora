@@ -54,6 +54,11 @@ img {
   filter: invert(100%);
 }
 
+.porcentagem {
+  width: 40px;
+  height: 40px;
+}
+
 .r1 {
   background-color: black;
 }
