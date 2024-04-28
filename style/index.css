@@ -79,6 +79,14 @@ img {
   background: #a5a5a5bb;
 }
 
+.cinzaa {
+  background: #a5a5a5;
+}
+
+.cinzaa:hover {
+  background: #a5a5a5bb;
+}
+
 .zeroo {
   justify-content: start;
   flex: 2;
