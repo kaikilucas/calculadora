@@ -13,4 +13,8 @@ function calculadora(e) {
   if (valor === 457) {
     resultado.innerHTML = 0;
   }
+
+  return console.log(resultado);
 }
+
+function somar() {}
