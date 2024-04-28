@@ -9,10 +9,10 @@
   <body>
     <section>
       <span class="header">
-        <p class="r1">7</p>
+        <p id="menu" class="r1">0</p>
       </span>
       <div>
-        <p class="cinza">AC</p>
+        <p onclick="calculadora(457)" class="cinza">AC</p>
         <p class="cinza">
           <img src="icons/plus-minus.png" />
         </p>
@@ -24,29 +24,30 @@
         </p>
       </div>
       <div>
-        <p>7</p>
-        <p>8</p>
-        <p>9</p>
+        <p onclick="calculadora(7)">7</p>
+        <p onclick="calculadora(8)">8</p>
+        <p onclick="calculadora(9)">9</p>
         <p class="laranja">X</p>
       </div>
       <div>
-        <p>4</p>
-        <p>5</p>
-        <p>6</p>
+        <p onclick="calculadora(4)">4</p>
+        <p onclick="calculadora(5)">5</p>
+        <p onclick="calculadora(6)">6</p>
         <p class="laranja">—</p>
       </div>
       <div>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
+        <p onclick="calculadora(1)">1</p>
+        <p onclick="calculadora(2)">2</p>
+        <p onclick="calculadora(3)">3</p>
         <p class="laranja">+</p>
       </div>
       <div class="ultimo" style="">
-        <p class="zero">0</p>
+        <p onclick="calculadora(0)" class="zero">0</p>
 
-        <p style="">,</p>
+        <p onclick="calculadora()" style="">,</p>
         <p class="laranja">=</p>
       </div>
     </section>
+    <script src="JS/index.js"></script>
   </body>
 </html>
