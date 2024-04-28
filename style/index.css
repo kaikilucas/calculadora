@@ -63,22 +63,37 @@ img {
   background-color: black;
 }
 
-#laranja {
+.laranja {
   background: #fea00a;
 }
-.zero {
+
+.laranja:hover {
+  background: #fea00ac0;
+}
+.cinza {
+  background: #a5a5a5;
+  color: black;
+}
+.cinza:hover {
+  background: #a5a5a5bb;
+}
+
+.zero1 {
+  justify-content: start;
   flex: 2;
   background: #333333;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
+  padding-left: 25px;
 }
+
 .zero1 {
-  padding-right: 105px;
-  justify-content: center;
-  background: #333333;
-  margin-left: 00px;
+}
+
+.zero1:hover {
+  background: #333333b4;
 }
 .ultimo {
   width: 380px;
@@ -102,4 +117,8 @@ img {
   font-family: "Courier New", Courier, monospace;
   margin-bottom: 10px;
   margin-top: 150px;
+}
+
+p:hover {
+  background: #333333b4;
 }
