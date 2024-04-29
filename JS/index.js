@@ -1,20 +1,30 @@
 function calculadora(e) {
   let valor = e;
+
+  if (valor === undefined) {
+    valor = 0; // Define o valor como 0 se nenhum argumento for passado
+  }
   let resultado = document.getElementById("menu");
 
-  console.log(valor);
-
-  if (resultado.innerHTML === "0") {
-    resultado.innerHTML = valor;
+  if (resultado.value == "0") {
+    resultado.value = valor;
   } else {
-    resultado.innerHTML += valor;
+    resultado.value += valor;
   }
 
-  if (valor === 457) {
-    resultado.innerHTML = 0;
+  if (valor == 9995) {
+    resultado.value = 0;
   }
+  let final = parseFloat(resultado.value);
+  console.log(final);
 
-  return console.log(resultado);
+  return final;
 }
 
-function somar() {}
+function somar() {
+  let resultadoCalculadora = calculadora(); // Chamando a função calculadora sem passar nenhum argumento
+  let valorParaSomar = 10; // Novo valor a ser somado
+
+  let resultadoFinal = resultadoCalculadora + valorParaSomar;
+  console.log(resultadoFinal);
+}

@@ -16,6 +16,7 @@ section {
   align-items: center;
   flex-direction: column;
   width: 390px;
+  margin-bottom: 50px;
 }
 
 section div {
@@ -96,17 +97,29 @@ img {
 .header {
   width: 390px;
   display: flex;
-  justify-content: end;
+
+  justify-content: center;
 }
 
-.header p {
+.header input {
   font-size: 80px;
-  margin-right: 28px;
+  border: none;
   color: white;
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
   margin-bottom: 10px;
-  margin-top: 150px;
+  margin-top: 148px;
+  width: 360px;
+
+  cursor: text;
+  text-align: end;
+  padding-right: 17px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 p:hover {
