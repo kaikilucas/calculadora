@@ -57,6 +57,7 @@ img {
 
 .r1 {
   background-color: black;
+  color: white;
 }
 .laranja {
   background: #fea00a;
@@ -104,7 +105,6 @@ img {
 .header input {
   font-size: 80px;
   border: none;
-  color: white !important;
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
   margin-bottom: 10px;
@@ -115,13 +115,16 @@ img {
   padding-right: 17px;
   opacity: 1 !important;
 }
+input[type="number"]:disabled {
+  color: white !important;
+}
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-  color: white !important;
-  opacity: 1 !important;
+}
+input[type="number"][disabled] {
 }
 
 p:hover {
