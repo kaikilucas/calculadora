@@ -30,7 +30,7 @@ function operador(e) {
     if(primeiroValor !== null){
       primeiroValor += parseFloat(resultado.value);}else{
     primeiroValor = parseFloat(resultado.value);}
-
+resultado.value = 0
     console.log(primeiroValor);
   }
 
