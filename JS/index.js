@@ -27,7 +27,9 @@ function limpar() {
 
 function operador(e) {
   if (e === "+") {
-    primeiroValor = parseFloat(resultado.value);
+    if(primeiroValor !== null){
+      primeiroValor + parseFloat(resultado.value);}else{
+    primeiroValor = parseFloat(resultado.value);}
 
     console.log(primeiroValor);
   }
