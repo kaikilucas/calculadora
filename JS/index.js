@@ -1,12 +1,40 @@
-function calculadora(nome) {
-  let valor = nome;
-  let resultado = document.getElementById("menu");
+let primeiroValor = null;
+let segundoValor = null;
+let imprimir = null;
+let resultado = document.getElementById("menu");
 
-  if (resultado.value == "0") {
+function calculadora(e) {
+  let valor = e;
+  if (
+    resultado.value === "0" ||
+    primeiroValor === parseFloat(resultado.value)
+  ) {
     resultado.value = valor;
   } else {
     resultado.value += valor;
   }
-  console.log(resultado.value);
-  return parseFloat(resultado.value);
+
+  segundoValor = resultado.value;
+  console.log("acompanhar o primeiro resultado " + resultado.value);
+}
+
+function limpar() {
+  resultado.value = "0";
+
+  primeiroValor = null;
+  segundoValor = null;
+}
+
+function operador(e) {
+  if (e === "+") {
+    primeiroValor = parseFloat(resultado.value);
+
+    console.log(primeiroValor);
+  }
+
+  if (e === "=") {
+    imprimir = primeiroValor + parseFloat(segundoValor);
+    resultado.value = imprimir;
+    console.log(parseFloat(resultado.value));
+  }
 }

@@ -12,7 +12,7 @@
         <input type="number" id="menu" value="0" class="r1" disabled />
       </span>
       <div>
-        <p onclick="calculadora('AC')" class="cinza">AC</p>
+        <p onclick="limpar()" class="cinza">AC</p>
         <p class="cinza">
           <img src="icons/plus-minus.png" />
         </p>
@@ -27,25 +27,25 @@
         <p onclick="calculadora(7)">7</p>
         <p onclick="calculadora(8)">8</p>
         <p onclick="calculadora(9)">9</p>
-        <p class="laranja">X</p>
+        <p onclick="operador('x')" class="laranja">X</p>
       </div>
       <div>
         <p onclick="calculadora(4)">4</p>
         <p onclick="calculadora(5)">5</p>
         <p onclick="calculadora(6)">6</p>
-        <p class="laranja">—</p>
+        <p onclick="operador('-')" class="laranja">—</p>
       </div>
       <div>
         <p onclick="calculadora(1)">1</p>
         <p onclick="calculadora(2)">2</p>
         <p onclick="calculadora(3)">3</p>
-        <p onclick="calculadora(999)" class="laranja">+</p>
+        <p onclick="operador('+')" class="laranja">+</p>
       </div>
       <div class="ultimo" style="">
         <p onclick="calculadora(0)" class="zero">0</p>
 
-        <p onclick="calculadora()" style="">,</p>
-        <p onclick="" class="laranja">=</p>
+        <p onclick="operador(',')" style="">,</p>
+        <p onclick="operador('=')" class="laranja">=</p>
       </div>
     </section>
     <script src="JS/index.js"></script>
