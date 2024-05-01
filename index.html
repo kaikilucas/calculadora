@@ -9,17 +9,17 @@
   <body>
     <section>
       <span class="header">
-        <input type="number" id="menu" value="0" class="r1" disabled />
+        <input type="text" id="menu" value="0" class="r1" disabled />
       </span>
       <div>
         <p onclick="limpar()" class="cinza">AC</p>
-        <p class="cinza">
+        <p onclick="operador('+-')" class="cinza">
           <img src="icons/plus-minus.png" />
         </p>
-        <p class="cinza">
+        <p onclick="operador('%')" class="cinza">
           <img src="icons/icons8-percentagem-90.png" />
         </p>
-        <p class="laranja">
+        <p onclick="operador('/')" class="laranja">
           <img class="dividir" src="icons/icons8-dividir-90.png" />
         </p>
       </div>
@@ -44,8 +44,8 @@
       <div class="ultimo" style="">
         <p onclick="calculadora(0)" class="zero">0</p>
 
-        <p onclick="operador(',')" style="">,</p>
-        <p onclick="operador('=')" class="laranja">=</p>
+        <p onclick="calculadora('.')" style="">,</p>
+        <p onclick="calcularResultado()" class="laranja">=</p>
       </div>
     </section>
     <script src="JS/index.js"></script>
