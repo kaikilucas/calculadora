@@ -9,11 +9,21 @@ function limpar() {
   segundoValor = null;
 }
 
+<<<<<<< HEAD
 function calculadora(e) {
   let valor = e;
   console.log("valor " + valor);
   if (valor !== ".") {
     valor = parseFloat(valor);
+=======
+function operador(e) {
+  if (e === "+") {
+    if(primeiroValor !== null){
+      primeiroValor += parseFloat(resultado.value);}else{
+    primeiroValor = parseFloat(resultado.value);}
+resultado.value = 0
+    console.log(primeiroValor);
+>>>>>>> 28d36577299b7104aff191b886cb68e6a6792045
   }
   if (valor === "0" || display.value == 0) {
     display.value = valor;
