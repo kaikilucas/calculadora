@@ -3,23 +3,21 @@ let primeiroValor = null;
 let segundoValor = null;
 let operacao = null;
 
+function calculadora(e) {
+  let valor = e;
+
+  if (display.value == "0" || display.value == primeiroValor) {
+    display.value = valor;
+    console.log("teste" + valor);
+  } else {
+    display.value += valor;
+  }
+}
+
 function limpar() {
   display.value = "0";
   primeiroValor = null;
   segundoValor = null;
-}
-
-function calculadora(e) {
-  let valor = e;
-  console.log("valor " + valor);
-  if (valor !== ".") {
-    valor = parseFloat(valor);
-  }
-  if (valor === "0" || display.value == 0) {
-    display.value = valor;
-  } else {
-    display.value += valor;
-  }
 }
 
 function operador(e) {
@@ -50,7 +48,7 @@ function operador(e) {
   } else if (operacao == "+-" && primeiroValor !== null) {
     primeiroValor += parseFloat(display.value);
   }
-  display.value = 0;
+  display.value = primeiroValor;
   console.log("primeiro valor " + primeiroValor);
 }
 
