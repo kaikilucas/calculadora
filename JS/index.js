@@ -1,17 +1,21 @@
 let display = document.getElementById("menu");
 let primeiroValor = null;
+let terceiroValor = null;
 let segundoValor = null;
 let operacao = null;
 
 function calculadora(e) {
   let valor = e;
 
-  if (display.value == "0" || display.value == primeiroValor) {
+  console.log(valor === 0);
+  if (display.value === "0" || display.value == terceiroValor) {
     display.value = valor;
     console.log("teste" + valor);
   } else {
     display.value += valor;
   }
+  terceiroValor = null;
+  console.log("display" + display.value);
 }
 
 function limpar() {
@@ -48,7 +52,8 @@ function operador(e) {
   } else if (operacao == "+-" && primeiroValor !== null) {
     primeiroValor += parseFloat(display.value);
   }
-  display.value = primeiroValor;
+  terceiroValor = primeiroValor;
+  display.value = terceiroValor;
   console.log("primeiro valor " + primeiroValor);
 }
 
